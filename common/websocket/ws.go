@@ -46,6 +46,32 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// 检查是否有这个account的连接池
+	// 如果没有，则创建一个空链接池
+	// 检查这个account的连接池中是否有这个user_id的连接
+	// 如果有，则关闭这个连接，然后创建一个新的连接
+	// 如果没有，则创建一个新的连接
+	accountsMu.Lock()
+	if _, exists := accounts[account]; !exists {
+		accounts[account] = &clients{
+			conn: make(map[string]*websocket.Conn),
+		}
+	}
+	accounts[account].Lock()
+	if _, exists := accounts[account].conn[user_id]; !exists {
+		accounts[account].conn[user_id] = ws
+	} else {
+		// todo 给旧连接发一个消息，告诉客户端当前账户已经做别的地方登录了
+		log.GetLogger().Infof("User %s is already logged in on another device", user_id)
+		accounts[account].conn[user_id].Close()
+		accounts[account].conn[user_id] = ws
+	}
+	accounts[account].Unlock()
+	accountsMu.Unlock()
+	connStatusMu.Lock()
+	connStatus[ws] = time.Now()
+	connStatusMu.Unlock()
+
 	ws.SetPingHandler(func(appData string) error {
 		connStatusMu.Lock()
 		defer connStatusMu.Unlock()
