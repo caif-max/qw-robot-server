@@ -50,6 +50,11 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		connStatusMu.Lock()
 		defer connStatusMu.Unlock()
 
+		if err := ws.WriteControl(websocket.PongMessage, []byte{},
+			time.Now().Add(time.Second)); err != nil {
+			log.GetLogger().Errorf("Failed to send pong: %v", err)
+		}
+
 		connStatus[ws] = time.Now()
 		return nil
 	})
