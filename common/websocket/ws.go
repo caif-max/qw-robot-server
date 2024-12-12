@@ -1,6 +1,7 @@
 package websocket
 
 import (
+	"errors"
 	"fmt"
 	"net/http"
 	"qw-robot-server/common/log"
@@ -15,11 +16,13 @@ var upgrader = websocket.Upgrader{
 	WriteBufferSize: 1024,
 }
 
-type client struct {
-	conn map[string]*websocket.Conn
+type clients struct {
+	conn       map[string]*websocket.Conn
+	sync.Mutex // Add mutex for thread safety
 }
 
-var clients = make(map[string]client)
+var accounts = make(map[string]*clients)
+var accountsMu sync.Mutex
 
 var (
 	connStatusMu sync.Mutex
@@ -40,6 +43,16 @@ func Init(port int) {
 }
 
 func handleConnections(w http.ResponseWriter, r *http.Request) {
+	// Add authentication check
+	account := r.URL.Query().Get("account")
+	user_id := r.URL.Query().Get("user_id")
+
+	if !authenticateUser(account, user_id) {
+		log.GetLogger().Error("Authentication failed")
+		http.Error(w, "Unauthorized", http.StatusUnauthorized)
+		return
+	}
+
 	ws, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
 		log.GetLogger().Error(err)
@@ -87,11 +100,60 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 
 	defer ws.Close()
 	for {
-		_, _, err := ws.ReadMessage()
+		mt, message, err := ws.ReadMessage()
 		if err != nil {
 			log.GetLogger().Error(err)
 			return
 		}
 		// 处理消息...
+		log.GetLogger().Infof("Received message: %d, %s", mt, string(message))
+
 	}
+}
+
+// Add new authentication function
+func authenticateUser(account, user_id string) bool {
+	// TODO: Implement your actual authentication logic here
+	if account == "" || user_id == "" {
+		return false
+	}
+
+	// Example authentication logic - replace with your actual authentication system
+	return true // temporary return for demonstration
+}
+
+func SendMessageToUser(account, user_id, message string) error {
+	accountsMu.Lock()
+	if _, exists := accounts[account]; !exists {
+		accountsMu.Unlock()
+		log.GetLogger().Errorf("Account %s not found", account)
+		return errors.New("account not found")
+	}
+	accounts[account].Lock()
+	if _, exists := accounts[account].conn[user_id]; !exists {
+		accounts[account].Unlock()
+		accountsMu.Unlock()
+		log.GetLogger().Errorf("User %s not found", user_id)
+		return errors.New("user not found")
+	}
+	accounts[account].conn[user_id].WriteMessage(websocket.TextMessage, []byte(message))
+	accounts[account].Unlock()
+	accountsMu.Unlock()
+	return nil
+}
+
+func SendMessageToAll(account, message string) error {
+	accountsMu.Lock()
+	if _, exists := accounts[account]; !exists {
+		accountsMu.Unlock()
+		log.GetLogger().Errorf("Account %s not found", account)
+		return errors.New("account not found")
+	}
+	accounts[account].Lock()
+	for _, conn := range accounts[account].conn {
+		conn.WriteMessage(websocket.TextMessage, []byte(message))
+	}
+	accounts[account].Unlock()
+	accountsMu.Unlock()
+	return nil
 }
