@@ -1,0 +1,12 @@
+{"level":"INFO","ts":"2024-12-12T19:43:14.775+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:43:14.775+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-12T19:44:31.051+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:44:36.898+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-12T19:45:21.803+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:45:21.804+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-12T19:45:59.158+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:46:05.542+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-12T19:46:43.156+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:46:43.156+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-12T19:47:31.330+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-12T19:47:31.330+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
