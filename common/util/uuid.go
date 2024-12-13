@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/satori/go.uuid"
+	uuid "github.com/satori/go.uuid"
 )
 
 func UUID() string {
@@ -29,9 +29,6 @@ func Dmd5(str string) string {
 
 func GetHashCode(str string, count int) int {
 	v := crc32.ChecksumIEEE([]byte(str))
-	if v < 0 {
-		v = -v
-	}
 	return int(v) % count
 }
 

@@ -91,10 +91,7 @@ func RandomLetterAndNum(length int) string {
 }
 
 func IfExistMap(data map[string]interface{}, key string) bool {
-	if data[key] != nil {
-		return true
-	}
-	return false
+	return data[key] != nil
 }
 
 // 判断key是否存在
@@ -276,17 +273,17 @@ func ValidAccountStatus(id string) bool {
 
 // ValidPwd 校验密码，8-16个字符，至少包含1个大写字母、1个小写字母、1个数字
 func ValidPwd(e string) bool {
-	rex := `^(?=.[a-z])(?=.[A-Z])(?=.*\d)[\s\S]{8,16}$`
+	rex := `^[A-Za-z\d\s]{8,16}$`
 	reg := regexp.MustCompile(rex)
-	return reg.MatchString(e)
+	hasLower := regexp.MustCompile(`[a-z]`).MatchString(e)
+	hasUpper := regexp.MustCompile(`[A-Z]`).MatchString(e)
+	hasDigit := regexp.MustCompile(`\d`).MatchString(e)
+	return reg.MatchString(e) && hasLower && hasUpper && hasDigit
 }
 
 func ValidTimeFormat(t string) bool {
 	_, err := time.Parse("2006-01-02 15:04:05", t)
-	if err != nil {
-		return false
-	}
-	return true
+	return err == nil
 }
 
 func ContainsString(s []string, e string) bool {
