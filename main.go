@@ -17,7 +17,7 @@ func main() {
 	config.Init()
 	log.GetLogger().Info("Hello World")
 
-	go websocket.Init(8080)
+	go websocket.Init(config.GetConf("websocket.port"))
 
 	fmt.Println("启动http服务")
 	httpLogDir := "./middleware.log"
