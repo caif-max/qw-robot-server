@@ -10,3 +10,775 @@
 {"level":"INFO","ts":"2024-12-12T19:46:43.156+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
 {"level":"INFO","ts":"2024-12-12T19:47:31.330+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
 {"level":"INFO","ts":"2024-12-12T19:47:31.330+0800","caller":"websocket/ws.go:38","msg":"WebSocket server starting on port 8080"}
+{"level":"INFO","ts":"2024-12-13T16:29:11.046+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:29:11.046+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"FATAL","ts":"2024-12-13T16:29:11.048+0800","caller":"websocket/ws.go:63","msg":"ListenAndServe: listen tcp: address 8061: missing port in address","stack":"qw-robot-server/common/websocket.Init\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:63"}
+{"level":"INFO","ts":"2024-12-13T16:33:21.157+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:33:21.158+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port 8061"}
+{"level":"INFO","ts":"2024-12-13T16:35:14.469+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:35:14.469+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port 8061"}
+{"level":"INFO","ts":"2024-12-13T16:40:56.827+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:40:56.829+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port 8061"}
+{"level":"INFO","ts":"2024-12-13T16:41:10.231+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"accountId\":\"123\",\"userId\":\"456\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T16:41:10.232+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToAll, Params: map[], Raw Data: {\"accountId\":\"123\",\"userIds\":[\"456\",\"789\"],\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T16:55:54.398+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:55:54.399+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"FATAL","ts":"2024-12-13T16:55:54.399+0800","caller":"websocket/ws.go:63","msg":"ListenAndServe: listen tcp: address 8061: missing port in address","stack":"qw-robot-server/common/websocket.Init\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:63"}
+{"level":"INFO","ts":"2024-12-13T16:56:43.271+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:56:43.272+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T16:56:53.221+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"accountId\":\"123\",\"userId\":\"456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T16:58:21.933+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T16:58:21.934+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T16:58:27.677+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"accountId\":\"123\",\"userId\":\"456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T16:58:27.678+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"accountId\":\"123\",\"userId\":\"456\",\"friendIds\":[\"789\",\"101\"],\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T17:07:44.484+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessageToUser\",\"accountId\":\"123\",\"userId\":\"456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T17:07:44.484+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessageToUsers\",\"accountId\":\"123\",\"userId\":\"456\",\"friendIds\":[\"789\",\"101\"],\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T17:12:52.163+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"accountId\":\"123\",\"userId\":\"456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T17:12:52.164+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessageToUsers\",\"accountId\":\"123\",\"userId\":\"456\",\"friendIds\":[\"789\",\"101\"],\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T17:12:52.164+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"createGroup\",\"accountId\":\"123\",\"userId\":\"456\",\"friendId\":\"789\",\"members\":[\"101\",\"102\"]}"}
+{"level":"INFO","ts":"2024-12-13T17:33:05.120+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T17:33:05.122+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T17:39:19.492+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T17:39:19.494+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T17:39:44.135+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T17:39:44.136+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T17:40:11.623+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[do5AKOJ4nzcKDBtBmLqekg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49504 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000436140}"}
+{"level":"INFO","ts":"2024-12-13T17:42:19.696+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T17:42:19.698+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T17:42:31.061+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[hDop8pngoGZA8+jXAQusiA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49552 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690190}"}
+{"level":"ERROR","ts":"2024-12-13T17:42:47.703+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49552: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:44:16.177+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[kB4nJNGdzMHwiX0YNjD9Hw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49658 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180500}"}
+{"level":"INFO","ts":"2024-12-13T17:44:16.179+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T17:44:19.700+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:44:56.191+0800","caller":"websocket/ws.go:292","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T17:44:56.192+0800","caller":"websocket/ws.go:165","msg":"websocket: close 1011 (internal server error): keepalive ping timeout","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:45:54.219+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[CeomiAplYn8AmEpHV6ZuQg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49730 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690190}"}
+{"level":"ERROR","ts":"2024-12-13T17:46:01.437+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49730: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:46:52.334+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[uxNyOqObqP2MPf0qIW0rfw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49762 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690140}"}
+{"level":"INFO","ts":"2024-12-13T17:46:52.335+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"ERROR","ts":"2024-12-13T17:46:56.459+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49762: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:47:12.832+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[fjQ87EGcijBsOhBV+KVNwg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49782 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140001805a0}"}
+{"level":"INFO","ts":"2024-12-13T17:47:12.832+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"ERROR","ts":"2024-12-13T17:47:18.976+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49782: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:47:19.702+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:48:19.703+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T17:48:19.703+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 2 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:50:13.010+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[SpdyiE6LQ+5kcWz/M/bNrg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49886 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690140}"}
+{"level":"ERROR","ts":"2024-12-13T17:50:18.979+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49886: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:51:19.705+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T17:51:19.705+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:51:28.819+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[Ih2+lr41oo4C1J/roF5Wgw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:49962 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140001805a0}"}
+{"level":"ERROR","ts":"2024-12-13T17:51:33.696+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:49962: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:52:12.313+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[1UpNCRBI0fMAQO8w7hPQEQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50015 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180640}"}
+{"level":"INFO","ts":"2024-12-13T17:52:12.313+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"ERROR","ts":"2024-12-13T17:52:15.714+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50015: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:53:19.706+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T17:53:19.706+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 2 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:55:13.450+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[lxpjMs1HzXiyyTaxoLIYoA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50168 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180550}"}
+{"level":"ERROR","ts":"2024-12-13T17:55:52.804+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50168: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:56:55.894+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[bSJguyH9/Q+5lKWyU+qdUw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50192 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140006901e0}"}
+{"level":"INFO","ts":"2024-12-13T17:56:55.895+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T17:56:55.901+0800","caller":"websocket/ws.go:292","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T17:56:55.901+0800","caller":"websocket/ws.go:165","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:57:19.708+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T17:57:56.080+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[e+liF01o2GTd53/125JwnQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50232 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140006903c0}"}
+{"level":"ERROR","ts":"2024-12-13T17:58:01.836+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50232: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:58:33.582+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[2f9muFFCRYGWFQ8m88P0Sw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50264 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180550}"}
+{"level":"INFO","ts":"2024-12-13T17:58:33.582+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"ERROR","ts":"2024-12-13T17:58:59.734+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50264: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T17:59:19.710+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:00:19.711+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T18:00:19.711+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:00:44.067+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[LxKaB7YHqV+AcLU4cyUjhQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50354 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690230}"}
+{"level":"ERROR","ts":"2024-12-13T18:00:50.625+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50354: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:01:33.744+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[n/Use/UsX6oQZr/RjIqsDg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:50385 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d2140}"}
+{"level":"INFO","ts":"2024-12-13T18:01:33.745+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"ERROR","ts":"2024-12-13T18:01:39.638+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:50385: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:02:19.712+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:03:19.713+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T18:03:19.713+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:04:19.580+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[Cd3AAt2pD5C15LL8xl8waw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51268 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140006901e0}"}
+{"level":"ERROR","ts":"2024-12-13T18:04:27.344+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:51268: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:05:03.454+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[Bixmfp+qo2ceq4kaKAXUUQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51293 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690320}"}
+{"level":"INFO","ts":"2024-12-13T18:05:03.456+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:05:03.464+0800","caller":"websocket/ws.go:292","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T18:05:03.464+0800","caller":"websocket/ws.go:165","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:05:18.477+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[jX6J6/MHR/JQ8YC77EJ7PQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51309 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000690550}"}
+{"level":"INFO","ts":"2024-12-13T18:05:19.714+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"ERROR","ts":"2024-12-13T18:05:20.929+0800","caller":"websocket/ws.go:165","msg":"read tcp 10.20.2.90:8061->10.20.2.96:51309: read: connection reset by peer","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:06:19.714+0800","caller":"websocket/ws.go:266","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T18:06:19.715+0800","caller":"websocket/ws.go:275","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:13:09.421+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[4/SQcD52EY3eLnly2UALOw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51599 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140006901e0}"}
+{"level":"INFO","ts":"2024-12-13T18:13:09.428+0800","caller":"websocket/ws.go:292","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T18:13:09.429+0800","caller":"websocket/ws.go:165","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:18:04.602+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[OHPaA3AlZ4msiZCiCsDAcg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51724 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140006901e0}"}
+{"level":"INFO","ts":"2024-12-13T18:18:04.612+0800","caller":"websocket/ws.go:292","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T18:18:04.612+0800","caller":"websocket/ws.go:165","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:165\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:19:10.489+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T18:19:10.490+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T18:19:28.024+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[Gxz9X/QpBr9nJ3aoEtu8Sg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51746 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140000a2190}"}
+{"level":"INFO","ts":"2024-12-13T18:19:28.037+0800","caller":"websocket/ws.go:293","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T18:19:28.037+0800","caller":"websocket/ws.go:166","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:166\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:21:01.038+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[IXyIgLeTOh/HyDAgwEeZiQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51779 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004340f0}"}
+{"level":"INFO","ts":"2024-12-13T18:21:01.047+0800","caller":"websocket/ws.go:293","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"ERROR","ts":"2024-12-13T18:21:01.047+0800","caller":"websocket/ws.go:166","msg":"websocket: close 1000 (normal)","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:166\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:21:50.414+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T18:21:50.414+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port %!d(string=8061)"}
+{"level":"INFO","ts":"2024-12-13T18:22:35.172+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T18:22:35.173+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-13T18:23:59.125+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[AIVFlYGSkXADCET3HdsNXA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:51981 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140000ae230}"}
+{"level":"INFO","ts":"2024-12-13T18:23:59.283+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:23:59.283+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:23:59.283+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:29:49.014+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?accountId=123&userId=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[NsMoHc0jKk2NYhsCV7nvWA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] 127.0.0.1:50873 /ws?accountId=123&userId=456 <nil> <nil> <nil> 0x1400044e190}"}
+{"level":"ERROR","ts":"2024-12-13T18:29:49.014+0800","caller":"websocket/ws.go:76","msg":"Authentication failed","stack":"qw-robot-server/common/websocket.handleConnections\n\t/Users/caif/vs/qw-robot-server/common/websocket/ws.go:76\nnet/http.HandlerFunc.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2136\nnet/http.(*ServeMux).ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2514\nnet/http.serverHandler.ServeHTTP\n\t/usr/local/go/src/net/http/server.go:2938\nnet/http.(*conn).serve\n\t/usr/local/go/src/net/http/server.go:2009"}
+{"level":"INFO","ts":"2024-12-13T18:30:34.831+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=123&user_id=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[Br5oKaJtY25GXv4rUXgAqQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] 127.0.0.1:50973 /ws?account=123&user_id=456 <nil> <nil> <nil> 0x1400044e2d0}"}
+{"level":"INFO","ts":"2024-12-13T18:30:39.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:30:44.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:30:49.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:30:54.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:30:59.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:04.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:09.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:14.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:19.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:24.833+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:29.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:34.832+0800","caller":"websocket/ws.go:171","msg":"Received message: 1, ping"}
+{"level":"INFO","ts":"2024-12-13T18:31:35.173+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 127.0.0.1:8061->127.0.0.1:50973: use of closed network connection"}
+{"level":"INFO","ts":"2024-12-13T18:31:35.173+0800","caller":"websocket/ws.go:268","msg":"Removed expired connection for user: 456"}
+{"level":"INFO","ts":"2024-12-13T18:31:35.174+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:32:21.749+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[cX2s2qEXUYE4kvtrrdRFvA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52861 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400044e3c0}"}
+{"level":"INFO","ts":"2024-12-13T18:32:26.673+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:52861: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:32:47.077+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[UQ7+8wEWERv6iNL7JvGZiQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52868 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac0f0}"}
+{"level":"INFO","ts":"2024-12-13T18:32:47.078+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:32:54.775+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:52868: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:33:03.794+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[KjHJZabP2Z0mTGspv4u6Dw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52897 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac2d0}"}
+{"level":"INFO","ts":"2024-12-13T18:33:03.794+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:33:15.388+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:52897: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:33:30.471+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=123&user_id=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[7NgcOrKlHhzs4R7BfdnYlw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] 127.0.0.1:51306 /ws?account=123&user_id=456 <nil> <nil> <nil> 0x140000ae2d0}"}
+{"level":"INFO","ts":"2024-12-13T18:33:33.578+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[5NelJwfbujnq6qAQFoj/Sw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52925 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac460}"}
+{"level":"INFO","ts":"2024-12-13T18:33:33.578+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:33:33.623+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:33:33.623+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:33:33.623+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:33:35.173+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:33:35.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:33:40.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:33:45.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:33:50.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:33:55.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:00.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:05.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:10.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:15.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:20.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:25.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:30.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:33.339+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[ui6GbbOLuM8ePAXQ4wCWJg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52960 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140001685a0}"}
+{"level":"INFO","ts":"2024-12-13T18:34:33.364+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:34:33.364+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:34:33.364+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:34:35.173+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 2 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:34:35.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:40.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:45.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:50.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:34:55.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:00.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:05.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:10.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:12.176+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[LplGa+RM2nikZ9WSgj014A==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52979 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000168780}"}
+{"level":"INFO","ts":"2024-12-13T18:35:12.212+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:35:12.212+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:35:12.212+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:35:15.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:20.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:25.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:27.955+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[btFlQDG0Cfn9rEBsYIi+0Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:52987 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000168910}"}
+{"level":"INFO","ts":"2024-12-13T18:35:27.980+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:35:27.980+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:35:27.981+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:35:30.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:35.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:40.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:45.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:50.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:35:55.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:00.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:05.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:10.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:15.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:20.473+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:25.472+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:30.471+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:35.470+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:40.469+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:45.469+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:36:55.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:05.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:10.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:15.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:20.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:25.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:30.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:35.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:40.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:45.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:37:55.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:05.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:10.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:15.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:20.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:25.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:30.376+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[NH0YUKm5d3d9YC2OjC8y6Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53110 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac0a0}"}
+{"level":"INFO","ts":"2024-12-13T18:38:30.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:35.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:40.382+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:38:40.382+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:38:40.382+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:38:40.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:45.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:38:55.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:05.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:10.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:15.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:20.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:25.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:30.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:35.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:40.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:45.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:39:55.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:05.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:10.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:15.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:20.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:25.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:30.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:35.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:40.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:45.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:40:55.469+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:05.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:10.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:15.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:20.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:25.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:30.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:35.467+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:40.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:45.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:50.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:41:55.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:42:00.468+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:42:02.132+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[z/Cp0jrpywSuqpCcyHMs4Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53236 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140001686e0}"}
+{"level":"INFO","ts":"2024-12-13T18:42:05.469+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-13T18:42:10.409+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1006 (abnormal closure): unexpected EOF"}
+{"level":"INFO","ts":"2024-12-13T18:42:12.869+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:53236: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:42:17.215+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[XS8r3ObGZRGT4aWRMogebA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53254 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac4b0}"}
+{"level":"INFO","ts":"2024-12-13T18:42:17.216+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:42:47.231+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdZC"}
+{"level":"INFO","ts":"2024-12-13T18:43:29.303+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:53254: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:43:35.167+0800","caller":"websocket/ws.go:268","msg":"Removed expired connection for user: 456"}
+{"level":"INFO","ts":"2024-12-13T18:43:35.168+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 2 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:43:44.272+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[EAsnqffWejSjBq+5RnyNbA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53334 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005ac1e0}"}
+{"level":"INFO","ts":"2024-12-13T18:43:44.272+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:43:49.279+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd0\ufffd."}
+{"level":"INFO","ts":"2024-12-13T18:44:13.370+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:53334: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T18:44:29.860+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[pTsxGvAa/Asq2q+2zGx0HQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53359 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400044e1e0}"}
+{"level":"INFO","ts":"2024-12-13T18:44:29.860+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-13T18:44:30.953+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdum"}
+{"level":"INFO","ts":"2024-12-13T18:44:35.166+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:44:50.874+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-13T18:44:50.875+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:44:50.875+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-13T18:45:35.167+0800","caller":"websocket/ws.go:277","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T18:48:27.192+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[5OTmK6mBEoiEEQovgagg1A==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53494 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000168460}"}
+{"level":"INFO","ts":"2024-12-13T18:48:28.208+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u001f\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-13T18:48:48.381+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-13T18:48:48.382+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:48:48.382+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-13T18:49:36.085+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"accountId\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:50:30.112+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[QifKf413O2+t2Rzqir4rPQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53543 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140001684b0}"}
+{"level":"INFO","ts":"2024-12-13T18:50:31.115+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: :\ufffd.q"}
+{"level":"INFO","ts":"2024-12-13T18:50:40.312+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"accountId\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:50:51.117+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-13T18:50:51.117+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:50:51.117+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-13T18:51:02.961+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"accountId\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:51:12.207+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[Q4PPVJr5xDkwav/vuXWxvg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53566 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000168870}"}
+{"level":"INFO","ts":"2024-12-13T18:51:13.208+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0006\ufffd(\t"}
+{"level":"INFO","ts":"2024-12-13T18:51:21.816+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"accountId\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:51:33.200+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-13T18:51:33.200+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:51:33.200+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-13T18:53:12.813+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[MBGFIN6e8wQ7R1OmzI9t8Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:53846 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400044e140}"}
+{"level":"INFO","ts":"2024-12-13T18:53:17.956+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdj\ufffd"}
+{"level":"INFO","ts":"2024-12-13T18:53:25.179+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:53:37.878+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-13T18:53:37.879+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:53:37.880+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-13T18:54:40.771+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:55:04.909+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[tiZFS1iGcRGNCEE+8ZeT9Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:54404 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400044e280}"}
+{"level":"INFO","ts":"2024-12-13T18:55:08.047+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T18:55:08.048+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-13T18:55:20.859+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[8XtZ7uMDxZMPvVtA8+QVMQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:54469 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140005120f0}"}
+{"level":"INFO","ts":"2024-12-13T18:55:25.874+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ̩t\ufffd"}
+{"level":"INFO","ts":"2024-12-13T18:55:32.325+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:55:32.333+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-13T18:55:32.333+0800","caller":"websocket/ws.go:294","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-13T18:55:32.333+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-13T18:59:03.376+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T18:59:03.378+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-13T18:59:27.642+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[nOqiRNCYJoqLO5O2/+f+UA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:55662 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d61e0}"}
+{"level":"INFO","ts":"2024-12-13T18:59:31.812+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:59:31.813+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"account\":\"admin\",\"userId\":\"123456\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T18:59:32.825+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\r\ufffd\u0004"}
+{"level":"INFO","ts":"2024-12-13T19:00:26.829+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:55662: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-13T19:01:03.379+0800","caller":"websocket/ws.go:269","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T19:01:03.379+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T19:01:29.618+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-13T19:01:29.619+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-13T19:01:42.214+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[bKIGDg0/plCpUva1HUvEmw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.90:8061 map[] map[] <nil> map[] 10.20.2.96:55747 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400045a140}"}
+{"level":"INFO","ts":"2024-12-13T19:01:45.195+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T19:01:45.195+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-13T19:01:47.408+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffds"}
+{"level":"INFO","ts":"2024-12-13T19:05:52.119+0800","caller":"websocket/ws.go:269","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-13T19:05:52.120+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-13T19:05:52.120+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.90:8061->10.20.2.96:55747: use of closed network connection"}
+{"level":"INFO","ts":"2024-12-16T10:56:05.352+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-16T10:56:05.354+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-16T10:58:17.251+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[EuAQojomG9xe9r+ZjevhlQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:52539 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004641e0}"}
+{"level":"INFO","ts":"2024-12-16T10:58:22.378+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdYc\ufffd"}
+{"level":"INFO","ts":"2024-12-16T10:59:45.084+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T10:59:45.084+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:00:05.355+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:52539: use of closed network connection"}
+{"level":"INFO","ts":"2024-12-16T11:00:05.355+0800","caller":"websocket/ws.go:269","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-16T11:00:05.355+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:03:04.305+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-16T11:03:04.305+0800","caller":"websocket/ws.go:60","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-16T11:03:53.164+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[nv9a2NMcC9gG32FcBMUFAA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:52934 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470140}"}
+{"level":"INFO","ts":"2024-12-16T11:03:53.274+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 4o\ufffdn"}
+{"level":"INFO","ts":"2024-12-16T11:03:58.457+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd'eD"}
+{"level":"INFO","ts":"2024-12-16T11:04:03.272+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: K\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:04:08.494+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0015\u0010-0"}
+{"level":"INFO","ts":"2024-12-16T11:04:13.275+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0016\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:04:13.284+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u001ad\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:04:18.356+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\n\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:04:23.288+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 0\\\ufffdF"}
+{"level":"INFO","ts":"2024-12-16T11:04:28.317+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd!d0"}
+{"level":"INFO","ts":"2024-12-16T11:04:33.272+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:04:33.273+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:04:33.273+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:04:41.598+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:05:13.808+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:05:30.451+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:06:46.200+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[xBdHUMHvjEn5vrbGI8k8RA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53069 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004702d0}"}
+{"level":"INFO","ts":"2024-12-16T11:06:46.207+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T11:06:46.207+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:06:46.207+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T11:07:09.947+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:07:55.384+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[RqHMT/Rev+c7U9RzI7P0QA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53117 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470280}"}
+{"level":"INFO","ts":"2024-12-16T11:07:55.389+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T11:07:55.390+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:07:55.390+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T11:12:19.084+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[yRiOpPLzqunMgY8YEkIG6Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53287 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470140}"}
+{"level":"INFO","ts":"2024-12-16T11:12:19.093+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T11:12:19.093+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:12:19.093+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T11:13:35.271+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[W7QaOmo6XkCyUvNN2mMrGQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53338 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140007100a0}"}
+{"level":"INFO","ts":"2024-12-16T11:13:35.277+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T11:13:35.277+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:13:35.278+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T11:14:40.120+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[OPP1zIlUoKiCBxayhQw6+A==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53381 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710050}"}
+{"level":"INFO","ts":"2024-12-16T11:14:40.129+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffḓ\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:14:45.134+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\u001c"}
+{"level":"INFO","ts":"2024-12-16T11:14:50.144+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u001a\ufffd-"}
+{"level":"INFO","ts":"2024-12-16T11:14:55.148+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffds\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:15:00.155+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \\\"i7"}
+{"level":"INFO","ts":"2024-12-16T11:15:00.156+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\u0014"}
+{"level":"INFO","ts":"2024-12-16T11:15:05.275+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: !.\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:15:10.142+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: %3\ufffd\u0008"}
+{"level":"INFO","ts":"2024-12-16T11:15:11.570+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53381: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:17:04.292+0800","caller":"websocket/ws.go:269","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-16T11:17:04.292+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:21:31.095+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[8tL5t3T71zt4sdNy6TX0Mg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53515 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470140}"}
+{"level":"INFO","ts":"2024-12-16T11:21:31.103+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u000e\ufffd("}
+{"level":"INFO","ts":"2024-12-16T11:21:36.134+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: !\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:21:41.140+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\"-\u0019"}
+{"level":"INFO","ts":"2024-12-16T11:21:42.181+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53515: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:21:58.995+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[zEyIxj1QWJMtclNCeGxhSQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53548 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710230}"}
+{"level":"INFO","ts":"2024-12-16T11:21:58.995+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:21:59.008+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:22:04.014+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: N\ufffd]E"}
+{"level":"INFO","ts":"2024-12-16T11:22:09.166+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0002\ufffd\ufffd\u0010"}
+{"level":"INFO","ts":"2024-12-16T11:22:14.018+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\u0012\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:22:19.132+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ׸\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:22:19.133+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0016\ufffdp"}
+{"level":"INFO","ts":"2024-12-16T11:22:22.492+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53548: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:23:04.291+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:23:07.244+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[L37dBhSdbdkaitHh2xzDrg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53571 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400010c500}"}
+{"level":"INFO","ts":"2024-12-16T11:23:07.244+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:23:07.262+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ,\ufffd\ufffdi"}
+{"level":"INFO","ts":"2024-12-16T11:23:12.277+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 3\ufffd\ufffd+"}
+{"level":"INFO","ts":"2024-12-16T11:23:17.282+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ͖\ufffd:"}
+{"level":"INFO","ts":"2024-12-16T11:23:22.533+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd^\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:23:27.259+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdP\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:23:27.290+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:23:32.407+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0016 \ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:23:37.294+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd~A#"}
+{"level":"INFO","ts":"2024-12-16T11:23:42.397+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 3֡2"}
+{"level":"INFO","ts":"2024-12-16T11:23:47.312+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:23:47.312+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:23:47.312+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:24:04.290+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:25:19.637+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[+sAtJJlUF08jGVjq9h31+A==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53654 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470140}"}
+{"level":"INFO","ts":"2024-12-16T11:25:19.648+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: )¡\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:24.652+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdCn"}
+{"level":"INFO","ts":"2024-12-16T11:25:29.655+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: *Z3\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:34.832+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd,"}
+{"level":"INFO","ts":"2024-12-16T11:25:39.648+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: hɓ\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:39.648+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 6\ufffdn\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:44.781+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 0\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:49.680+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd@\u0016\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:54.739+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdvk"}
+{"level":"INFO","ts":"2024-12-16T11:25:59.657+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 36k\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:25:59.659+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:25:59.659+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:25:59.659+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:27:17.723+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[GUCEJBcKSKCsyZ2S9/D7tA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53721 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140007102d0}"}
+{"level":"INFO","ts":"2024-12-16T11:27:17.733+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0019\ufffd1"}
+{"level":"INFO","ts":"2024-12-16T11:27:22.939+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0013\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:27:27.739+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\u0010\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:27:31.848+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53721: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:28:27.646+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[vm4BS6xuXTFfJoF60h73FQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53758 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470140}"}
+{"level":"INFO","ts":"2024-12-16T11:28:27.646+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:28:27.658+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0017\ufffd\u001a"}
+{"level":"INFO","ts":"2024-12-16T11:28:32.679+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd@\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:28:37.672+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: @\\\ufffdk"}
+{"level":"INFO","ts":"2024-12-16T11:28:40.967+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53758: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:28:56.543+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[n+yH24K77OAwYJHKShyA7g==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53778 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400010c2d0}"}
+{"level":"INFO","ts":"2024-12-16T11:28:56.543+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:28:56.550+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: x%\ufffd\u0005"}
+{"level":"INFO","ts":"2024-12-16T11:29:01.546+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: W\ufffd\n\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:29:04.261+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:29:06.661+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0015\u000b\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:29:11.544+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: N\ufffdW\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:29:12.134+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53778: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:30:04.260+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:30:36.964+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[20Y1DgLddgOTsCz9XwBFFA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53864 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710050}"}
+{"level":"INFO","ts":"2024-12-16T11:30:36.965+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:30:36.989+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53864: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:31:04.260+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:31:58.939+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[qCMG9YlZv17+jW/C458wJw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53947 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000470280}"}
+{"level":"INFO","ts":"2024-12-16T11:31:58.939+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:31:58.945+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdD*\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:31:59.936+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdRG"}
+{"level":"INFO","ts":"2024-12-16T11:32:00.954+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: <\ufffd\"\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:01.978+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: m\u0006J\u001a"}
+{"level":"INFO","ts":"2024-12-16T11:32:02.941+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd|\ufffd\u001e"}
+{"level":"INFO","ts":"2024-12-16T11:32:04.028+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ҅> "}
+{"level":"INFO","ts":"2024-12-16T11:32:04.260+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:32:05.050+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd*b"}
+{"level":"INFO","ts":"2024-12-16T11:32:06.033+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdy\ufffdJ"}
+{"level":"INFO","ts":"2024-12-16T11:32:07.099+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: @2\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:08.226+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdJ\ufffdk"}
+{"level":"INFO","ts":"2024-12-16T11:32:08.975+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: aqC\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:10.068+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0018\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:10.991+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdh-"}
+{"level":"INFO","ts":"2024-12-16T11:32:11.969+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdV\ufffd\u0006"}
+{"level":"INFO","ts":"2024-12-16T11:32:13.037+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: c\ufffd\ufffdm"}
+{"level":"INFO","ts":"2024-12-16T11:32:14.062+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffdQ"}
+{"level":"INFO","ts":"2024-12-16T11:32:15.086+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: :\ufffd\ufffd["}
+{"level":"INFO","ts":"2024-12-16T11:32:16.010+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ,\ufffdej"}
+{"level":"INFO","ts":"2024-12-16T11:32:16.995+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0004\ufffdf"}
+{"level":"INFO","ts":"2024-12-16T11:32:18.055+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdN6o"}
+{"level":"INFO","ts":"2024-12-16T11:32:18.978+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: M\ufffd4\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:19.017+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:20.103+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: Ϭ\ufffd "}
+{"level":"INFO","ts":"2024-12-16T11:32:21.025+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdꙂ"}
+{"level":"INFO","ts":"2024-12-16T11:32:22.051+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: g\u0017\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:23.075+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0004\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:24.096+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdjp"}
+{"level":"INFO","ts":"2024-12-16T11:32:25.125+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdW\ufffd("}
+{"level":"INFO","ts":"2024-12-16T11:32:26.144+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: VT\u001b\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:27.049+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdt\u0004\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:28.093+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 㕒\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:29.058+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdT\ufffdd"}
+{"level":"INFO","ts":"2024-12-16T11:32:30.138+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ˝\ufffdd"}
+{"level":"INFO","ts":"2024-12-16T11:32:31.070+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: T\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:32.186+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ;̫$"}
+{"level":"INFO","ts":"2024-12-16T11:32:33.211+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0007\ufffdba"}
+{"level":"INFO","ts":"2024-12-16T11:32:33.212+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53947: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:32:41.217+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[f1OZC9aZGOR7G7PtUGmsXw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:53960 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000182460}"}
+{"level":"INFO","ts":"2024-12-16T11:32:41.217+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:32:41.225+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffdo"}
+{"level":"INFO","ts":"2024-12-16T11:32:42.230+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0007I_\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:43.229+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: t\ufffdl\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:44.230+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ض\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:45.244+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdiu\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:46.234+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdh\\h"}
+{"level":"INFO","ts":"2024-12-16T11:32:47.235+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdh\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:48.246+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ?tnv"}
+{"level":"INFO","ts":"2024-12-16T11:32:49.245+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdq\ufffdW"}
+{"level":"INFO","ts":"2024-12-16T11:32:50.244+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\u001e\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:51.243+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: y\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:52.238+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdY+"}
+{"level":"INFO","ts":"2024-12-16T11:32:53.235+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: j\u0012b\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:54.244+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: !\u0001\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:55.258+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\n\u001a\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:55.279+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:32:55.279+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:32:56.236+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: <^\ufffd}"}
+{"level":"INFO","ts":"2024-12-16T11:32:57.274+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd1\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:32:58.243+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd9"}
+{"level":"INFO","ts":"2024-12-16T11:32:59.240+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ,\u0013\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:00.244+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: P,Ax"}
+{"level":"INFO","ts":"2024-12-16T11:33:01.267+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0003\u0014\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:01.268+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: c6\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:02.297+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ؍\ufffdj"}
+{"level":"INFO","ts":"2024-12-16T11:33:03.315+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0016\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:04.236+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: U\ufffd\ufffd?"}
+{"level":"INFO","ts":"2024-12-16T11:33:05.261+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0014\ufffd\u0012\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:06.259+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: V\ufffd\u000b\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:07.412+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: T\ufffd)|"}
+{"level":"INFO","ts":"2024-12-16T11:33:08.334+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: a\ufffd.\u000c"}
+{"level":"INFO","ts":"2024-12-16T11:33:09.269+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: 4J\u0019\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:10.276+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: .5T\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:11.269+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:12.267+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdx!\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:33:13.351+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdm\ufffd\u0000"}
+{"level":"INFO","ts":"2024-12-16T11:33:14.272+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:53960: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T11:34:04.259+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:34:45.012+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[JLxgwuPpqa1uqJd63oFkRA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:54037 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140003f4000}"}
+{"level":"INFO","ts":"2024-12-16T11:34:45.013+0800","caller":"websocket/ws.go:123","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T11:34:45.029+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: Ğ\ufffd6"}
+{"level":"INFO","ts":"2024-12-16T11:34:46.127+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0013C\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:47.047+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: !v\ufffdK"}
+{"level":"INFO","ts":"2024-12-16T11:34:48.073+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: y]\ufffd,"}
+{"level":"INFO","ts":"2024-12-16T11:34:49.023+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: ;.\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:50.032+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: #á\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:51.040+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: C&A6"}
+{"level":"INFO","ts":"2024-12-16T11:34:52.045+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: Z1\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:53.044+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdb\u0016\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:54.040+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdY\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:55.048+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: f\ufffdݏ"}
+{"level":"INFO","ts":"2024-12-16T11:34:56.060+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: S\ufffd\u000bt"}
+{"level":"INFO","ts":"2024-12-16T11:34:57.056+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdut\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.107+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdQ\ufffd~"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.720+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.720+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.731+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.731+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:34:58.731+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T11:35:04.258+0800","caller":"websocket/ws.go:278","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T11:36:50.330+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[d8XZ871FZLO8a59zGOX5HA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:54115 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140003f4000}"}
+{"level":"INFO","ts":"2024-12-16T11:36:50.339+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \n\"-A"}
+{"level":"INFO","ts":"2024-12-16T11:37:00.374+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0015\ufffdh\u0002"}
+{"level":"INFO","ts":"2024-12-16T11:37:02.288+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:37:02.288+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:37:10.337+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdF\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:37:10.339+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\u0000\ufffd^"}
+{"level":"INFO","ts":"2024-12-16T11:37:20.442+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd\ufffdN\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:37:30.346+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdG\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:37:30.358+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:37:30.358+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:37:30.358+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:39:51.591+0800","caller":"websocket/ws.go:70","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[GRoV/joec6Zu3X1qSN7oqQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:54246 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140003f4000}"}
+{"level":"INFO","ts":"2024-12-16T11:39:51.598+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: &\ufffd\ufffdf"}
+{"level":"INFO","ts":"2024-12-16T11:40:01.063+0800","caller":"router/index.go:30","msg":"Client IP: 127.0.0.1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:40:01.063+0800","caller":"websocket/ws.go:204","msg":"SendMessageToUser: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T11:40:01.826+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffdN\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:40:11.759+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \ufffd(im"}
+{"level":"INFO","ts":"2024-12-16T11:40:11.760+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: o\ufffd\u0005U"}
+{"level":"INFO","ts":"2024-12-16T11:40:21.690+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0004*\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:40:31.636+0800","caller":"websocket/ws.go:138","msg":"SetPingHandler: \u0014\ufffd*\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:40:31.636+0800","caller":"websocket/ws.go:152","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:40:31.636+0800","caller":"websocket/ws.go:295","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:40:31.636+0800","caller":"websocket/ws.go:167","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:44:55.975+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-16T11:44:55.976+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-16T11:45:28.204+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[mh+AevQG+kvI9L4jB6nA7Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:54324 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004381e0}"}
+{"level":"INFO","ts":"2024-12-16T11:45:28.233+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\u0003\ufffdT"}
+{"level":"INFO","ts":"2024-12-16T11:45:38.216+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\n\ufffd|"}
+{"level":"INFO","ts":"2024-12-16T11:45:48.226+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\\\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:45:48.229+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \u0010\ufffd[]"}
+{"level":"INFO","ts":"2024-12-16T11:45:58.218+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:46:08.217+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: p9Dl"}
+{"level":"INFO","ts":"2024-12-16T11:46:08.218+0800","caller":"websocket/ws.go:159","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:46:08.218+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:46:08.218+0800","caller":"websocket/ws.go:174","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T11:46:14.370+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-16T11:46:14.374+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-16T11:46:26.573+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[LA0CGDwdA3QnkH8Hm/K9Zg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:54339 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400045c0a0}"}
+{"level":"INFO","ts":"2024-12-16T11:46:26.588+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \u0006\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:46:36.579+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffdx\u000e"}
+{"level":"INFO","ts":"2024-12-16T11:46:46.582+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \u000b\u0018\ufffd\u0017"}
+{"level":"INFO","ts":"2024-12-16T11:46:46.582+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: A\ufffd\u0013\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:46:56.642+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: l~:\u000b"}
+{"level":"INFO","ts":"2024-12-16T11:47:06.585+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffdc\ufffd"}
+{"level":"INFO","ts":"2024-12-16T11:47:06.585+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T11:47:06.586+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T11:47:06.586+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:13:50.012+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[50m/sFjXlafJXaNpjF1fVg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:55696 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400009c190}"}
+{"level":"INFO","ts":"2024-12-16T14:13:50.021+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: k\ufffd\ufffd\u0000"}
+{"level":"INFO","ts":"2024-12-16T14:13:55.058+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffdp{z"}
+{"level":"INFO","ts":"2024-12-16T14:14:00.045+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: z\ufffdIa"}
+{"level":"INFO","ts":"2024-12-16T14:14:05.042+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffdHt\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:14:10.109+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: i\ufffd\u0018\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:14:10.109+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: z\u0012/\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:14:15.162+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: n4\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:14:20.099+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\u0016w\u0014"}
+{"level":"INFO","ts":"2024-12-16T14:14:25.162+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: s\ufffd2q"}
+{"level":"INFO","ts":"2024-12-16T14:14:30.033+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:14:30.033+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:14:30.033+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:15:02.485+0800","caller":"router/index.go:30","msg":"Client IP: ::1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T14:16:21.601+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[hYY7irHlm1hh0/cnxIfQ9w==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:55788 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400009c140}"}
+{"level":"INFO","ts":"2024-12-16T14:16:21.622+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: {\u0005$\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:16:26.752+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: W77-"}
+{"level":"INFO","ts":"2024-12-16T14:16:31.638+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ߐ\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:16:36.716+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffdɁ"}
+{"level":"INFO","ts":"2024-12-16T14:16:41.661+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffdqA\u0019"}
+{"level":"INFO","ts":"2024-12-16T14:16:41.662+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:16:46.675+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\u001c\ufffd\u001c"}
+{"level":"INFO","ts":"2024-12-16T14:16:51.637+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: j\ufffd\ufffdU"}
+{"level":"INFO","ts":"2024-12-16T14:16:56.640+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: Žr,"}
+{"level":"INFO","ts":"2024-12-16T14:17:01.650+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd_o\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:17:01.656+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:17:01.656+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:17:01.656+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:17:50.289+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[mbZq1DqTRqNXA/lDzBQf2g==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:55833 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400045c280}"}
+{"level":"INFO","ts":"2024-12-16T14:17:50.296+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd;\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:17:55.358+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffde?"}
+{"level":"INFO","ts":"2024-12-16T14:17:55.359+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: w\ufffd\ufffdL"}
+{"level":"INFO","ts":"2024-12-16T14:18:00.290+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \u0008\ufffd\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:18:05.318+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd\ufffdq"}
+{"level":"INFO","ts":"2024-12-16T14:18:05.318+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:18:05.318+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:18:05.318+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:18:51.831+0800","caller":"router/index.go:30","msg":"Client IP: ::1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T14:18:51.832+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=123&user_id=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[y0pWS1kiHT6pMFBh+U+w1Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] [::1]:63838 /ws?account=123&user_id=456 <nil> <nil> <nil> 0x1400009c190}"}
+{"level":"INFO","ts":"2024-12-16T14:18:56.833+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:19:01.832+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:19:06.832+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:19:11.832+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:19:16.831+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:19:19.674+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1006 (abnormal closure): unexpected EOF"}
+{"level":"INFO","ts":"2024-12-16T14:20:26.854+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[NdjWGzA2WTBctSP0hQuJ9w==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:55915 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400045c140}"}
+{"level":"INFO","ts":"2024-12-16T14:20:26.868+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ,+\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:20:31.897+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: U~\ufffd\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:20:41.868+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:20:41.868+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:20:41.868+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:20:58.090+0800","caller":"router/index.go:30","msg":"Client IP: ::1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T14:20:58.091+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=123&user_id=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[dG8A8Ub0AFHVFqihc1pP3g==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] [::1]:64000 /ws?account=123&user_id=456 <nil> <nil> <nil> 0x14000170730}"}
+{"level":"INFO","ts":"2024-12-16T14:20:58.091+0800","caller":"websocket/ws.go:124","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T14:21:03.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:08.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:13.093+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:16.276+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[VKskV2srbYoP+4S57M7FOw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:55958 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400009c190}"}
+{"level":"INFO","ts":"2024-12-16T14:21:16.290+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd\ufffd\u0004"}
+{"level":"INFO","ts":"2024-12-16T14:21:16.649+0800","caller":"websocket/ws.go:284","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T14:21:18.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:21.368+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: >\ufffd\ufffd\u0001"}
+{"level":"INFO","ts":"2024-12-16T14:21:21.368+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\ufffd\u0012="}
+{"level":"INFO","ts":"2024-12-16T14:21:23.025+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:55958: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T14:21:23.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:28.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:33.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:38.092+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:21:40.274+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1006 (abnormal closure): unexpected EOF"}
+{"level":"INFO","ts":"2024-12-16T14:22:24.122+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[KSyRmfwKa9RkYkZR9N7e4Q==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56006 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x1400045c0f0}"}
+{"level":"INFO","ts":"2024-12-16T14:22:24.122+0800","caller":"websocket/ws.go:124","msg":"Relogin message sent successfully"}
+{"level":"INFO","ts":"2024-12-16T14:22:24.282+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:22:29.147+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \u001exkG"}
+{"level":"INFO","ts":"2024-12-16T14:22:39.210+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:22:39.210+0800","caller":"websocket/ws.go:301","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:22:39.210+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:23:16.649+0800","caller":"websocket/ws.go:275","msg":"Removed expired connection for user: 456"}
+{"level":"INFO","ts":"2024-12-16T14:23:16.650+0800","caller":"websocket/ws.go:284","msg":"Cleaned up 2 expired connections"}
+{"level":"INFO","ts":"2024-12-16T14:24:38.325+0800","caller":"qw-robot-server/main.go:18","msg":"Hello World"}
+{"level":"INFO","ts":"2024-12-16T14:24:38.326+0800","caller":"websocket/ws.go:61","msg":"WebSocket server starting on port: 8061"}
+{"level":"INFO","ts":"2024-12-16T14:24:51.199+0800","caller":"router/index.go:30","msg":"Client IP: ::1, URL: /api/sendMessageToUser, Params: map[], Raw Data: {\"action\":\"sendMessage\",\"account\":\"admin\",\"userId\":\"123456\",\"friendId\":\"789\",\"message\":\"Hello, World!\"}"}
+{"level":"INFO","ts":"2024-12-16T14:24:51.201+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=123&user_id=456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Key:[hD8Oh4wPHuWAMhhEckWMEQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Go-http-client/1.1]] {} <nil> 0 [] false localhost:8061 map[] map[] <nil> map[] [::1]:64201 /ws?account=123&user_id=456 <nil> <nil> <nil> 0x140004d81e0}"}
+{"level":"INFO","ts":"2024-12-16T14:24:56.202+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:24:59.478+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1006 (abnormal closure): unexpected EOF"}
+{"level":"INFO","ts":"2024-12-16T14:24:59.478+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 456 in account: 123"}
+{"level":"INFO","ts":"2024-12-16T14:27:21.908+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[rNYdgPrjVM+kNZwOtrumjA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56225 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d81e0}"}
+{"level":"INFO","ts":"2024-12-16T14:27:21.921+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:27:26.912+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: >\ufffd\ufffd\u0013"}
+{"level":"INFO","ts":"2024-12-16T14:27:36.923+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:27:36.923+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:27:36.923+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:28:53.339+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[QmqHsmTFE75MEIWSM2+dlQ==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56282 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d81e0}"}
+{"level":"INFO","ts":"2024-12-16T14:28:53.349+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:29:13.354+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: '\ufffds\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:30:38.323+0800","caller":"websocket/ws.go:276","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-16T14:30:38.323+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:56282: use of closed network connection"}
+{"level":"INFO","ts":"2024-12-16T14:30:38.323+0800","caller":"websocket/ws.go:285","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T14:31:16.968+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[fMKjBgKgJzocjkxaoInnMg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56286 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d8190}"}
+{"level":"INFO","ts":"2024-12-16T14:31:16.974+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:31:36.971+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd{)4"}
+{"level":"INFO","ts":"2024-12-16T14:32:38.323+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:56286: use of closed network connection"}
+{"level":"INFO","ts":"2024-12-16T14:32:38.323+0800","caller":"websocket/ws.go:276","msg":"Removed expired connection for user: 123456"}
+{"level":"INFO","ts":"2024-12-16T14:32:38.323+0800","caller":"websocket/ws.go:285","msg":"Cleaned up 1 expired connections"}
+{"level":"INFO","ts":"2024-12-16T14:33:11.800+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[m5AeIL8/nJjjFBiIjm2/mg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56324 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d8410}"}
+{"level":"INFO","ts":"2024-12-16T14:33:11.811+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:33:31.820+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: #@\ufffd"}
+{"level":"INFO","ts":"2024-12-16T14:33:41.838+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:33:41.838+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:33:41.838+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:34:28.968+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[CZsnSKjQAyrklCN3MR2pyA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56396 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710190}"}
+{"level":"INFO","ts":"2024-12-16T14:34:34.227+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: \ufffd\u0000׬"}
+{"level":"INFO","ts":"2024-12-16T14:34:44.096+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:34:44.096+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:34:44.096+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:43:01.706+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[f5/uboqbebsjr+BF492tbA==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:56863 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710190}"}
+{"level":"INFO","ts":"2024-12-16T14:43:06.716+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: t\ufffd\ufffd\\"}
+{"level":"INFO","ts":"2024-12-16T14:43:16.859+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1011"}
+{"level":"INFO","ts":"2024-12-16T14:43:16.859+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:43:16.859+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1011 (internal server error): keepalive ping timeout"}
+{"level":"INFO","ts":"2024-12-16T14:47:07.907+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[4UCsvCGyDmaz1IAfUh24Ig==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:57007 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d8190}"}
+{"level":"INFO","ts":"2024-12-16T14:47:07.924+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:47:51.452+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:57007: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T14:47:51.453+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:48:06.351+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[L/xztx0tZxB0CIQ6dJYLVg==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:57051 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140004d8370}"}
+{"level":"INFO","ts":"2024-12-16T14:48:16.793+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: read tcp 10.20.2.92:8061->10.20.2.60:57051: read: connection reset by peer"}
+{"level":"INFO","ts":"2024-12-16T14:48:16.793+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:48:51.957+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Sec-Websocket-Extensions:[permessage-deflate; client_max_window_bits] Sec-Websocket-Key:[+e2VPwG4KK3/TxAoyIoAmw==] Sec-Websocket-Version:[13] Upgrade:[websocket] User-Agent:[Python/3.13 websockets/14.1]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:57074 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180550}"}
+{"level":"INFO","ts":"2024-12-16T14:48:51.967+0800","caller":"websocket/ws.go:139","msg":"SetPingHandler: ping"}
+{"level":"INFO","ts":"2024-12-16T14:48:57.044+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T14:48:57.044+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:48:57.044+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T14:58:03.081+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Origin:[http://10.20.2.92:8061] Sec-Websocket-Key:[GpMOU1RDD9ko7wdppJlhSQ==] Sec-Websocket-Version:[13] Upgrade:[websocket]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:57845 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140007101e0}"}
+{"level":"INFO","ts":"2024-12-16T14:58:03.092+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T14:58:03.092+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T14:58:03.092+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T15:33:56.290+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Origin:[http://10.20.2.92:8061] Sec-Websocket-Key:[Jda2odgDPEPVxnBUE8n5xA==] Sec-Websocket-Version:[13] Upgrade:[websocket]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:58250 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x140007101e0}"}
+{"level":"INFO","ts":"2024-12-16T15:33:56.296+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T15:33:56.296+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T15:33:56.296+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T15:35:45.062+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Origin:[http://10.20.2.92:8061] Sec-Websocket-Key:[1kBBegDJrIX1rE1v5Es1Cg==] Sec-Websocket-Version:[13] Upgrade:[websocket]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:58306 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000710140}"}
+{"level":"INFO","ts":"2024-12-16T15:35:45.067+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T15:35:45.068+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T15:35:45.068+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T15:36:22.410+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Origin:[http://10.20.2.92:8061] Sec-Websocket-Key:[mpTpAjtc46ZCad377EpyJw==] Sec-Websocket-Version:[13] Upgrade:[websocket]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:58310 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180550}"}
+{"level":"INFO","ts":"2024-12-16T15:36:22.418+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T15:36:22.418+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T15:36:22.418+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}
+{"level":"INFO","ts":"2024-12-16T15:47:52.643+0800","caller":"websocket/ws.go:71","msg":"handleConnections: &{GET /ws?account=admin&user_id=123456 HTTP/1.1 1 1 map[Connection:[Upgrade] Origin:[http://10.20.2.92:8061] Sec-Websocket-Key:[aFQ2JkvrDF42Q1ZYQJl1Pg==] Sec-Websocket-Version:[13] Upgrade:[websocket]] {} <nil> 0 [] false 10.20.2.92:8061 map[] map[] <nil> map[] 10.20.2.60:58585 /ws?account=admin&user_id=123456 <nil> <nil> <nil> 0x14000180500}"}
+{"level":"INFO","ts":"2024-12-16T15:47:52.654+0800","caller":"websocket/ws.go:158","msg":"SetCloseHandler: 1000"}
+{"level":"INFO","ts":"2024-12-16T15:47:52.654+0800","caller":"websocket/ws.go:302","msg":"Connection closed for user: 123456 in account: admin"}
+{"level":"INFO","ts":"2024-12-16T15:47:52.654+0800","caller":"websocket/ws.go:173","msg":"ReadMessage error: websocket: close 1000 (normal)"}

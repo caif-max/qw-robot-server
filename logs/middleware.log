@@ -4,9 +4,12 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /api/apidoc/*filepath     --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-[GIN-debug] HEAD   /api/apidoc/*filepath     --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-[GIN-debug] GET    /api/healthcheck          --> qw-robot-server/router.Init.func1 (3 handlers)
+[GIN-debug] GET    /api/apidoc/*filepath     --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /api/apidoc/*filepath     --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /api/healthcheck          --> qw-robot-server/router.Init.func1 (4 handlers)
+[GIN-debug] POST   /api/sendMessageToUser    --> qw-robot-server/handler.SendMessageToUser (4 handlers)
+[GIN-debug] POST   /api/sendMessageToAll     --> qw-robot-server/handler.SendMessageToAll (4 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
-[GIN-debug] Listening and serving HTTP on :8081
+[GIN-debug] Listening and serving HTTP on :8060
+[GIN] 2024/12/16 - 14:24:51 | 200 |     388.375µs |             ::1 | POST     "/api/sendMessageToUser"
