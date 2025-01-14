@@ -3,7 +3,6 @@ package websocket
 import (
 	"context"
 	"errors"
-	"fmt"
 	"net/http"
 	"qw-robot-server/common/log"
 	"sync"
@@ -160,11 +159,6 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		}
 
 		connStatus[ws] = time.Now()
-		for _, client := range accounts[account].conn {
-			fmt.Println("account: ", account)
-			fmt.Println("client: ", client)
-			fmt.Println("time: ", connStatus[client.conn])
-		}
 		return nil
 	})
 
