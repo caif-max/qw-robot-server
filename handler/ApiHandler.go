@@ -15,10 +15,16 @@ type SendMessageToUserRequest struct {
 	Message  string `json:"message"`
 }
 
-type SendMessageToAllRequest struct {
+type SendMessageToMutiUserRequest struct {
 	Account string   `json:"account"`
 	UserIds []string `json:"userIds"`
 	Message string   `json:"message"`
+}
+type CreateGroupRequest struct {
+	Account  string   `json:"account"`
+	UserId   string   `json:"userId"`
+	FriendId string   `json:"friendId"`
+	Members  []string `json:"members"`
 }
 
 func SendMessageToUser(c *gin.Context) {
@@ -48,11 +54,11 @@ func SendMessageToUser(c *gin.Context) {
 	})
 }
 
-func SendMessageToAll(c *gin.Context) {
-	request := &SendMessageToAllRequest{}
+func SendMessageToMutiUser(c *gin.Context) {
+	request := &SendMessageToMutiUserRequest{}
 	c.ShouldBindJSON(request)
 
-	err := websocket.SendMessageToAll(request.Account, request.UserIds, request.Message)
+	err := websocket.SendMessageToMutiUser(request.Account, request.UserIds, request.Message)
 	if err != nil {
 		c.JSON(200, gin.H{
 			"result":  "Failed",
@@ -63,5 +69,14 @@ func SendMessageToAll(c *gin.Context) {
 
 	c.JSON(200, gin.H{
 		"result": "OK",
+	})
+}
+
+func GetOnlineUsers(c *gin.Context) {
+	onlineUsers := websocket.GetOnlineUsers()
+
+	c.JSON(200, gin.H{
+		"result": "OK",
+		"data":   onlineUsers,
 	})
 }

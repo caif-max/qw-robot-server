@@ -21,6 +21,7 @@ type Client struct {
 	messageCh chan []byte
 	done      chan struct{}
 	sync.Mutex
+	user_id string
 }
 
 type clients struct {
@@ -113,6 +114,7 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	accounts[account].Lock()
+	// 如果当前用户已经登录，则断开旧连接
 	if oldClient, exists := accounts[account].conn[user_id]; exists {
 		// 创建一个带超时的 context
 		ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
@@ -125,7 +127,7 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 				oldClient.conn.WriteJSON(message{
 					Code:    "relogin",
 					UserId:  user_id,
-					Message: "当前账户已经在别的地方登录了",
+					Message: "断开当前连接，因为当前账户已经在别的地方登录了",
 				})
 				close(done)
 			}()
@@ -141,6 +143,9 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		close(oldClient.done)
 		oldClient.conn.Close()
 	}
+
+	// 将新连接添加到账户中，并更新连接状态
+	client.user_id = user_id
 	accounts[account].conn[user_id] = client
 	accounts[account].Unlock()
 	accountsMu.Unlock()
@@ -148,12 +153,13 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 	connStatus[ws] = time.Now()
 	connStatusMu.Unlock()
 
+	// 设置ping handler，用于更新连接状态
 	ws.SetPingHandler(func(appData string) error {
 		log.GetLogger().Infof("SetPingHandler: %v", appData)
 		connStatusMu.Lock()
 		defer connStatusMu.Unlock()
 
-		if err := ws.WriteControl(websocket.PongMessage, []byte("Pong"),
+		if err := ws.WriteControl(websocket.PongMessage, []byte(appData),
 			time.Now().Add(time.Second)); err != nil {
 			log.GetLogger().Errorf("Failed to send pong: %v", err)
 		}
@@ -162,18 +168,21 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 		return nil
 	})
 
+	// 设置close handler，用于移除连接
 	ws.SetCloseHandler(func(code int, text string) error {
 		log.GetLogger().Infof("SetCloseHandler: %v", code)
 		removeConnection(ws, account, user_id)
 		return nil
 	})
 
+	// 发送登录成功消息
 	ws.WriteJSON(message{
 		Code:    "login",
 		UserId:  user_id,
 		Message: "登录成功",
 	})
 
+	// 开始读取消息
 	defer ws.Close()
 	for {
 		mt, message, err := ws.ReadMessage()
@@ -182,13 +191,15 @@ func handleConnections(w http.ResponseWriter, r *http.Request) {
 			removeConnection(ws, account, user_id)
 			return
 		}
-		// 处理消息...
+		// 处理消息，正常情况下客户端不会给服务端发送消息的，所以这里只把消息记录下来
 		log.GetLogger().Infof("Received message: %d, %s", mt, string(message))
 
 	}
 }
 
-// Add new authentication function
+// 检查账户、用户是否正确
+// 检查license是否过期
+// 检查当前账户下的连接数是否超过license数量
 func authenticateUser(account, user_id string) bool {
 	// TODO: Implement your actual authentication logic here
 	if account == "" || user_id == "" {
@@ -199,7 +210,7 @@ func authenticateUser(account, user_id string) bool {
 	// 	"account": account,
 	// 	"product": "qw-robot",
 	// }
-	// jsonData, err := json.Marshal(data)
+	// jsonData, _ := json.Marshal(data)
 	// response, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 	// if err != nil {
 	// 	log.GetLogger().Errorf("Failed to get license: %v", err)
@@ -252,7 +263,7 @@ func SendMessageToUser(account, user_id, message string) error {
 	}
 }
 
-func SendMessageToAll(account string, userIds []string, message string) error {
+func SendMessageToMutiUser(account string, userIds []string, message string) error {
 	accountsMu.Lock()
 	if _, exists := accounts[account]; !exists {
 		accountsMu.Unlock()
@@ -276,6 +287,20 @@ func SendMessageToAll(account string, userIds []string, message string) error {
 	}
 
 	return nil
+}
+
+func GetOnlineUsers() map[string][]string {
+	accountsMu.Lock()
+	onlineUsers := make(map[string][]string)
+	for account, clients := range accounts {
+		clients.Lock()
+		for user_id := range clients.conn {
+			onlineUsers[account] = append(onlineUsers[account], user_id)
+		}
+		clients.Unlock()
+	}
+	accountsMu.Unlock()
+	return onlineUsers
 }
 
 func checkConnStatus() {
@@ -343,6 +368,7 @@ func removeConnection(conn *websocket.Conn, account, userID string) {
 	accountsMu.Unlock()
 }
 
+// 给客户端发送消息
 func handleMessages(client *Client) {
 	for {
 		select {

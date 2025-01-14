@@ -35,9 +35,10 @@ func logRequestMiddleware() gin.HandlerFunc {
 }
 
 func Init(engine *gin.Engine) {
+	engine.Use(logRequestMiddleware())
+
 	route := engine.Group("/api")
 	// 添加日志中间件
-	route.Use(logRequestMiddleware())
 
 	route.Static("/apidoc", "apidoc")
 
@@ -51,5 +52,6 @@ func Init(engine *gin.Engine) {
 	// service.InitServiceRouter(serviceRoutes)
 
 	route.POST("/sendMessageToUser", handler.SendMessageToUser)
-	route.POST("/sendMessageToAll", handler.SendMessageToAll)
+	route.POST("/sendMessageToMutiUser", handler.SendMessageToMutiUser)
+	route.POST("/getOnlineUsers", handler.GetOnlineUsers)
 }

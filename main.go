@@ -20,9 +20,8 @@ func main() {
 	go websocket.Init(config.GetConf("websocket.port"))
 
 	fmt.Println("启动http服务")
-	httpLogDir := "./middleware.log"
-	httpLogDir = config.GetConf("log.dir") + "/middleware.log"
-	f, _ := os.Create(httpLogDir)
+	httpLog := config.GetConf("log.dir") + "/middleware.log"
+	f, _ := os.Create(httpLog)
 	gin.DefaultWriter = io.MultiWriter(f)
 	e := gin.Default()
 

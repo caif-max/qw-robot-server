@@ -8,8 +8,9 @@
 [GIN-debug] HEAD   /api/apidoc/*filepath     --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
 [GIN-debug] GET    /api/healthcheck          --> qw-robot-server/router.Init.func1 (4 handlers)
 [GIN-debug] POST   /api/sendMessageToUser    --> qw-robot-server/handler.SendMessageToUser (4 handlers)
-[GIN-debug] POST   /api/sendMessageToAll     --> qw-robot-server/handler.SendMessageToAll (4 handlers)
+[GIN-debug] POST   /api/sendMessageToMutiUser --> qw-robot-server/handler.SendMessageToMutiUser (4 handlers)
+[GIN-debug] POST   /api/getOnlineUsers       --> qw-robot-server/handler.GetOnlineUsers (4 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8060
-[GIN] 2024/12/16 - 14:24:51 | 200 |     388.375µs |             ::1 | POST     "/api/sendMessageToUser"
+[GIN] 2025/01/13 - 14:36:47 | 200 |     646.167µs |             ::1 | POST     "/api/getOnlineUsers"
